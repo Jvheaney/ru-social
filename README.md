@@ -1,4 +1,5 @@
 # RU Social
+![logo_3](https://user-images.githubusercontent.com/40678238/202979724-11f499b1-873f-4285-a257-7a82e8ac7324.png)
 
 The date is January 14, 2020. You've come up with a funny idea to make a dating app for your university (at the time, Ryerson University) while working out. It will be called RU Mine. You message your friends, tell them your idea, and a close friend of yours agrees to make it with you. You tell him, "If the domain is available, I will build it".
 
@@ -173,7 +174,14 @@ Oh, and, never ever use shingled magnetic recording drives in a server and expec
 
 ### Testing the waters
 
+![RU Mine Post](https://user-images.githubusercontent.com/40678238/202980358-08cbfdb8-bf1f-4bfa-885e-1f2871c381a2.png)
+
 ### Stickers
+![RU Mine Stickers](https://user-images.githubusercontent.com/40678238/202981041-3be34a66-b3bd-4711-9ad6-effeaf028c1b.png)
+![RU Mine Stickers](https://user-images.githubusercontent.com/40678238/202981052-2b24d82e-bb06-4ba5-b3b2-231a7c19c9d2.png)
+![RU Mine Stickers](https://user-images.githubusercontent.com/40678238/202981069-e886154c-f5c0-4622-af20-65d9e71d17ea.png)
+![RU Mine Stickers](https://user-images.githubusercontent.com/40678238/202981078-4be12bba-575d-42b4-9444-3524b665b77f.png)
+
 
 ### Press
 
@@ -181,7 +189,11 @@ Oh, and, never ever use shingled magnetic recording drives in a server and expec
 
 ### Marketing
 
+![Marketing post](https://user-images.githubusercontent.com/40678238/202980670-3429c3da-95ac-47dd-8858-9179b50c8ea1.png)
+
 ### Cupid's Arrow, 2020 Valentine's Day Special
+
+![Cupid's Arrow Post](https://user-images.githubusercontent.com/40678238/202980449-2a333b06-23cb-4bc5-8ea3-edaeced247ef.png)
 
 ### Penguins at Work
 
@@ -198,29 +210,51 @@ Oh, and, never ever use shingled magnetic recording drives in a server and expec
 ### App Store Approvals
 
 ### Night of the Release
+![Almost over!](https://user-images.githubusercontent.com/40678238/202981354-6c18b045-09b4-47db-94f5-e58657e06174.png)
+![It's up!](https://user-images.githubusercontent.com/40678238/202981475-f25c614c-e087-4b6c-bee5-079687e45c01.png)
 
 ### Putting Out Fires
 
 ### JVM Overload
 
-### Smooth Sailing
+### Smooth Sailing and Milestones
+
+![1M Swipes](https://user-images.githubusercontent.com/40678238/202981851-773d3dfb-251e-4c11-a5a5-4f53fe0600a7.png)
 
 ### DDoS Attack
 
 ### Crashing Servers
 
 ### Version 2
+![Fall Update](https://user-images.githubusercontent.com/40678238/202982414-f4671991-237e-4e22-a12e-be05dfe85da6.jpg)
+![V2](https://user-images.githubusercontent.com/40678238/202982427-6ebde867-1035-4e2f-8b2f-054cbcba2fd6.jpg)
+![V2](https://user-images.githubusercontent.com/40678238/202982434-91afbba9-abda-49d0-b05c-daa7bfc39e1d.jpg)
+![V2](https://user-images.githubusercontent.com/40678238/202982445-465fe2d0-4a62-4e1d-887c-9e02783d0b97.jpg)
+![V2](https://user-images.githubusercontent.com/40678238/202982462-7158f9c3-d1d6-4095-b6aa-2cab46e2de91.jpg)
+![V2](https://user-images.githubusercontent.com/40678238/202982472-0a5cecd2-d162-48d8-8d2b-39397abb6e46.jpg)
+
 
 ### Merchandise
+![Merch](https://user-images.githubusercontent.com/40678238/202982647-a8520ed1-6218-4d76-ad22-360d22f1deb3.jpg)
 
 ### RU Friends
+![RU Friends](https://user-images.githubusercontent.com/40678238/202982738-beab2be8-6577-4535-a211-4a0d3dad2a17.jpg)
+![RU Friends Launched](https://user-images.githubusercontent.com/40678238/202982824-66687554-a6d4-47af-aec5-bdbdc89711d4.jpg)
+
 
 ### Groups and Group Chats
+![Groups and Group Chats](https://user-images.githubusercontent.com/40678238/202983029-54feed40-9f10-4fe2-8960-ba45dbaac2d7.jpg)
 
 ### Social Scoop
+![Social Scoop](https://user-images.githubusercontent.com/40678238/202983504-be659b04-86fc-49fb-95fb-a49884fed3b0.jpg)
 
 ### Press (Again)
 
 ### RU Bot or Not, Valentine's Day 2021 Special
+![Start](https://user-images.githubusercontent.com/40678238/202983106-40f8901a-13ae-40ea-bfb5-e7120cf19434.jpg)
+![Can you guess?](https://user-images.githubusercontent.com/40678238/202983336-4dc6c3cf-84e9-4992-9094-82cbf838f239.jpg)
+![Finish](https://user-images.githubusercontent.com/40678238/202983117-8007eccc-a3c1-4b8e-a7e0-0ca9e5c7008f.jpg)
 
 ### The Final Line
+![TMU Mine](https://user-images.githubusercontent.com/40678238/202983636-d6b62c3b-4a3e-453f-8b56-3323841eb2e0.jpg)
+

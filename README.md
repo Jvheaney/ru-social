@@ -171,24 +171,59 @@ Oh, and, never ever use shingled magnetic recording drives in a server and expec
 ## 6. The Story of RU Mine
 
 ### The Idea
+It's true; I really came up with the idea for RU Mine while working out. I _really did_ tell my friends and agreed to build it, alongside one of my close friends, on the condition that the domain was available. We decided that it would be a dating app made specifically for Ryerson Students, and we would verify their school in the age-old way, using their student email address.
+
+We quickly mapped out some features we wanted this app to have; all-inclusivity, missed connections, mutual courses, private and encrypted private messages. We threw all of these features onto an HTML template and put it up on the internet. Now it was time to see what Ryerson felt about it.
+<br/><br/>
 
 ### Testing the waters
+It was January 17th, the day we decided to launch the site to the Ryerson community through a few Ryerson Instagram pages. Around 12:20pm, the pages that agreed to spread the word fired out our posts. "RU Mine, dating app for Ryerson Students, coming March 2020". The description instructed students that were interested in the platform to visit the link in their bio to sign-up for the waitlist.
+
+This waitlist acted as a great metric to understand if anyone would even download this app. With around 900 waitlist signups by the end of the week and a lot of buzz on Instagram, we decided to go ahead with the plan.
+<br/>
 <div align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202980358-08cbfdb8-bf1f-4bfa-885e-1f2871c381a2.png" height=300 />
 </div>
+<br/><br/>
 
 ### Stickers
+Now we needed to spread the word about RU Mine beyond Instagram. My friend came up with the great idea to plaster stickers around campus with our logo, a small message, and a URL to our site. We bought sticker paper online, printed our stickers at home, cut them in the school's printshop, and began to plaster them around campus one night.
+
+We spent hours running around campus slapping stickers onto anything and everything. Extra attention was given to covering Bumble stickers :) We gave piles of stickers to friends and asked them to plaster them around campus. We finally finished our stack of a few hundred stickers around 9pm, celebrated in the campus bar, and prepared the post for the next morning.
+
+That next morning we posted a call out; "If you take a photo of our stickers and post it, you will be entered into a contest to win movie tickets". Our followers went out and found stickers all around campus, and posted pictures for that entire week. Students that had no idea what "RU Mine" was and why there were stickers everywhere were even intrigued enough to follow.
+
+_Success._
+
 <p align="center" float="left">
   <img src="https://user-images.githubusercontent.com/40678238/202981041-3be34a66-b3bd-4711-9ad6-effeaf028c1b.png" height=250 />
   <img src="https://user-images.githubusercontent.com/40678238/202981078-4be12bba-575d-42b4-9444-3524b665b77f.png" height=250 />
   <img src="https://user-images.githubusercontent.com/40678238/202981052-2b24d82e-bb06-4ba5-b3b2-231a7c19c9d2.png" height=250 />
   <img src="https://user-images.githubusercontent.com/40678238/202981069-e886154c-f5c0-4622-af20-65d9e71d17ea.png" height=250 />
 </p>
-
+<br/><br/>
 
 ### Press
+Around this time, we were contacted by a few student newspapers that wanted to know who we were and what in the world RU Mine was. We accepted and did our first interview the day after our sticker extravaganza. It went to print and was posted online on January 22nd. We discussed our progress, our plans, explained who we were, and why Ryerson should be excited about it.
+
+We were also approached by a larger student news outlets, which interviewed us a few days after our initial student-news debut. That student journalist asked us some good questions about our algorithm, how we plan to diversify ourselves from the likes of Tinder and Bumble, what students can expect, and if we had ever heard of an Instagram page that was planning to do a similar match-making thing.
+
+We hadn't.
+<br/><br/>
 
 ### Competition
+We got back to our desks at the library and quickly tried to figure out what this Instagram match-making page was. It was *planning* (key word is _planning_) to do a "missed connections" type of thing over Instagram posts. They were already making some bold statements that we had somehow copied their idea. Crazy, but expected.
+
+We did what any sane business people would do. We purchased domains that were similar to ours and fit the niche we were targeting, made it clear that we were separate, and continued on our way.
+
+The compeition was not a fan of that. They approached the reporter from the second news outlet and explained to the reporter that we had infringed on their idea, and we were stealing the audience they had grown (an audience size in which we had eclipsed a week prior). The reporter asked us for comment, to which we told the reporter that this is just business, and the other page had not started yet, so how could we possibly copy them?
+
+That article never ended up being printed unfortunately. It would've helped us at the time, but we continued on.
+
+_That's it from the compeition, right?_
+
+Of course not. In retaliation to us, they had purchased domains similar to ours, started an online presence and vowed to create an app "better than RU Mine" (which had not existed yet). As with any and all copycats, it fizzled into oblivian and was forgotten about.
+<br/><br/>
 
 ### Marketing
 <div align="center">

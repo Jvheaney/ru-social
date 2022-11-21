@@ -220,22 +220,42 @@ The compeition was not a fan of that. They approached the reporter from the seco
 
 That article never ended up being printed unfortunately. It would've helped us at the time, but we continued on.
 
-_That's it from the compeition, right?_
+_That's it from the competition, right?_
 
 Of course not. In retaliation to us, they had purchased domains similar to ours, started an online presence and vowed to create an app "better than RU Mine" (which had not existed yet). As with any and all copycats, it fizzled into oblivian and was forgotten about.
 <br/><br/>
 
 ### Marketing
+We needed to get viral within our community. Our followers were growing, but slowly, and we really wanted to make an impact on launch. As with many dating apps, you need what is called _critical mass_ to exist: just enough people on the app that new people decide to join to see what's going on. It's a bit of a chicken and egg situation if you really play it out.
+
+We needed a massive amount of users right at launch.
+
+Thus started our campaign to make content that matched the language of our generation, memes. We poked fun at other local universities, made memes about the state of our own school, and always made a callback to our app. Some of the memes were dumb, some were hilarious; but they managed to work, and we watched our follower count steadily climb.
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202980670-3429c3da-95ac-47dd-8858-9179b50c8ea1.png" height=300 />
 </div>
+<br/><br/>
 
 ### Cupid's Arrow, 2020 Valentine's Day Special
+In our short press run with the school, we had mentioned that we were planning to do a Valentine's Day special. We hadn't gone into specifics in the article, mainly because we had no specifics at the time. We just made it up while we were talking in the interview. The beauty of winging it.
+
+It was time to deliver on that promise. We set out to develop a match-making surface (eat your heart out, competition), that used an online questionnaire to match students to potential matches. We built up a frontend that included 15 quick multiple choice questions, including romantic interests, hobbies, vacation hotspots, and preferred elevators in the student centre.
+
+We collected hundreds of entries over the course of a week or so. We had given ourselves 2 days to calculate the results and post them on February 12th.
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202980449-2a333b06-23cb-4bc5-8ea3-edaeced247ef.png" height=300 />
 </div>
 
 ### Penguins at Work
+Those two days were intense. We knew we had to do matrix multiplication in-order to calculate the individual scores of each user relative to each and every other student. We knew it was an O(n<sup>2</sup>) problem. We didn't realize how much computation it would take.
+
+Thankfully, the night before release, we managed to get our program to be multi-threaded, and we threw it onto a 16 core, 32 thread 1U server I had in my basement. I wasn't home when it was on, but I have reports (from my brother) that the fans were operating at such a high noise level that he thought it may spontaneously combust. Thankfully, it didn't.
+
+It took about an hour until we had our CSVs ready to be imported into PostgreSQL. We met up on the "loud floor" of our student centre and ran some data analysis on the scores, just for fun. We found the data so interesting that we released graphs of our findings alongside their top 5 matches.
+
+I spent that entire night, long into the morning, building an HTML/CSS/JS/PHP page to host our results. We launched at around 10 in the morning to much student acclaim.
 
 ### Meetups and Partnerships
 

@@ -20,24 +20,55 @@ Thus started the journey to make Ryerson's dating app, which permanently shifted
 The following is a brief summary of the technologies behind each of the individual repos within this large monorepo. The stories associated with each can be found in section 6.
 
 ### rumine-web
+This is the main web directory of the RU Mine website. In this repo is the frontpage, retired frontpage, image render script, managament APIs, the Valentine's Day app, user account management, compression shell scripts, and various other PHP scripts.
+
+Technologies used: PHP, HTML, CSS, JavaScript, React, React-Native, BASH, and SQL.
 
 ### rumine-cupids-arrow-2020
+This is RU Mine's first Valentine's Day special, Cupid's Arrow. Cupid's Arrow was a matchmaking service that matched students using a small questionnaire.
+
+Technologies: PHP, React-Native, React, SQL.
 
 ### rumine-php-backend
+These are various PHP scripts used to facilitate aspects of the backend. It includes an admin page to render metrics obtained from the analytics service, the newer image render script, one-off APIs for Spotify and FindMyGroupChats, and a JWT token manager.
+
+Technologies: PHP, HTML, CSS, JS, SQL.
 
 ### rusocial-java-backend
+This is the main backend for RU Mine and RU Friends. The RU Mine backend was originally developed in less than 4 days, and expanded over the course of 2 years to improve performance and integrate new features.
+
+Technologies: Spring-Boot, Java, PostgreSQL, SQL, Neo4J, Cypher Querying Language, Apache Kafka, Snowball Stemmer, Firebase Notifications, APNS, JWTs.
 
 ### rusocial-frontend
+This is the mobile app for RU Mine and RU Friends. The RU Mine frontend was originally developed in less than 6 days, and expanded over the course of 2 years with updates, bug patches, performance improvements, and eventually RU Friends and Group Chats.
+
+Technologies: React-Native, JS, Objective-C, Swift, Java, Kotlin.
 
 ### rumine-frontend-extra-dependencies
+These are modified dependency files created to overwrite select node module files. They improved aspects like chatting, allowed for reactions, prevented crashes on Android, and made the platform more cohesive and performant.
+
+Technologies: React-Native, JS.
 
 ### rumine-ru-bot-or-not-setup-2021
+This is the setup repo for RU Bot or Not, RU Mine's 2021 Valentine's Day special. This collected responses to a set of questions that would be later used in conjunction with LLM generated responses for the final game.
+
+Technologies used: React-Native, React, JS, PHP, SQL.
 
 ### rumine-ru-bot-or-not-end-2021
+This is the final game repo for RU Bot or Not, RU Mine's 2021 Valentine's Day special. It made use of pre-generated LLM outputs mixed in with legitimate human responses to allow participating students to try to guess which text-chatter was a human, and which were bots. Winners received the Instagram handle of the human.
+
+Technologies used: React-Native, React, JS, PHP, SQL, OpenAI's GPT-2.
 
 ### rumine-analytics
+This was an analytics service spun up in a night to calculate important service metrics to evaluate the health of the platform.
+
+Technologies: Spring-Boot, Java, PostgreSQL, SQL, Neo4J, Cypher Querying Language.
 
 ### rumine-artwork-contest
+This was a Halloween special event to collect artwork from our community.
+
+Technologies: React, React-Native, JS, PHP, SQL.
+
 
 ## 2. Missing code from the monorepo
 The following are repos containing code associated with RU Social that was not included in this monorepo. Technologies used are included below.

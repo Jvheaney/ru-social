@@ -121,6 +121,7 @@ This was a publication that was spun up as a derivative project of RU Mine. It f
 
 <b>Technologies:</b> <i>HTML, CSS, JS, RSS.</i>
 <br/><br/><br/>
+
 ## 3. Understanding the code
 It is important to understand that this code was written over the course of 2 years in speed bursts to add new features, fix performance bugs, and hit deadlines our community expected. There are aspects of the code that is hastily written, and if you look close enough you can see a pattern emerge of slowly improving code as time went on.
 
@@ -128,9 +129,11 @@ Initial files involved with RU Mine are written far worse than files involved wi
 
 Please read my takeaways to see how I think this code holds up today (Spoiler: there's a lot of things I would improve).
 <br/><br/>
+
 ## 4. Infrastructure
 The infrastructure I designed for RU Mine progressively grew more complex, but in doing so fixed many pain points involved with the app. Below are the three stages of infrastructure and architectures that existed in RU Mine's history.
 <br/><br/>
+
 ### Initial
 <b>Machine:</b> <i>Running on a bare metal FreeBSD 11.1 server using 4 shingled magnetic recording (SMR) drives in RAIDz2.</i>
 
@@ -138,6 +141,7 @@ The infrastructure I designed for RU Mine progressively grew more complex, but i
 
 <b>Services:</b> <i>RU Mine web directory, Cupid's Arrow, first iterations of the RU Social Java backend and RU Social mobile app.</i>
 <br/><br/>
+
 ### Version 2
 <b>Machine:</b> <i>Running on a bare metal FreeBSD 12.1 server using 4 perpendicular magnetic recording (PMR) drives in RAIDz2.</i>
 
@@ -145,6 +149,7 @@ The infrastructure I designed for RU Mine progressively grew more complex, but i
 
 <b>Services:</b> <i>RU Mine web directory, second iterations of the RU Social Java backend and RU Social mobile app (pre-RU Friends and groups), RU Mine shop.</i>
 <br/><br/>
+
 ### Final
 <b>Machines:</b> <i>Running on a bare metal FreeBSD 12.1 server using 4 perpendicular magnetic recording (PMR) drives in RAIDz2, high availability proxy to off-site backup server.</i>
 
@@ -153,6 +158,7 @@ The infrastructure I designed for RU Mine progressively grew more complex, but i
 <b>Services:</b> <i>RU Mine web directory, final interations of RU Social Java backend and RU Social mobile app, RU Mine Analytics, RU Bot or Not, Artwork contest, Social Scoop, Admin dashboards, RU Mine shop, FindMyGroupChats.</i>
 
 <br/><br/>
+
 ## 5. Takeaways
 There are a few key takeaways from this code. First off, this is a very crude and old representation of how I code. This started off as a 10-day sprint to get a working application, frontend and backend, to production. There is a lot a very messy code, especially near the beginning of the backend's journey (RU Mine v1). It's terribly disorganized, and for some reason I was manually creating the JSON for responses. Ridiculous. That's what a mad dash to get something done in a framework you have no experience in will do to you.
 
@@ -168,6 +174,7 @@ Finally, and this has probably been alluded too throughout this document; Someti
 <br/><br/>
 Oh, and, never ever use shingled magnetic recording drives in a server and expect to survive a DDoS attack. It will not work out!
 <br/><br/>
+
 ## 6. The Story of RU Mine
 
 ### The Idea
@@ -232,9 +239,11 @@ We needed a massive amount of users right at launch.
 
 Thus started our campaign to make content that matched the language of our generation, memes. We poked fun at other local universities, made memes about the state of our own school, and always made a callback to our app. Some of the memes were dumb, some were hilarious; but they managed to work, and we watched our follower count steadily climb.
 
-<div align="center">
+<p float="left" align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202980670-3429c3da-95ac-47dd-8858-9179b50c8ea1.png" height=300 />
-</div>
+  <img src="https://user-images.githubusercontent.com/40678238/203177567-aff7ec02-f37b-446e-a63a-5be4a923d148.jpg" height=300 />
+  <img src="https://user-images.githubusercontent.com/40678238/203177572-98d40f4f-f578-4589-bca9-14cb5055971f.jpg" height=300 />
+</p>
 <br/><br/>
 
 ### Cupid's Arrow, 2020 Valentine's Day Special

@@ -1,0 +1,43 @@
+module.exports = {
+   authToken: "",
+   profile: {},
+   profileCreate: {
+     "firstname_display":"",
+     "birthdate": "",
+     "program": "",
+     "year": "",
+     "gender": "",
+     "interested_male": "",
+     "interested_female": "",
+     "interested_nb": "",
+     "interested_trans": "",
+     "interested_other": "",
+     "bio": "",
+     "pronouns": "",
+     "lookingfor": "",
+     "token": "",
+     "show_me":""
+   },
+   friends: {
+     "firstname_display": "",
+     "pronouns": "",
+     "program": "",
+     "year": "",
+     "top_5_spotify": "",
+     "badges": "",
+     "classes": "",
+     "interests": "",
+     "bio": "",
+     "image0": "",
+     "image1": "",
+     "image2":"",
+     "image3":"",
+     "algo_pref": "",
+     "show_me": ""
+   },
+   watchposid: 0,
+   changedPref: false,
+   fromMatches: false,
+   location_last_sent: Math.round((new Date()).getTime() / 1000),
+   hasSeenRUFriendsDialog: false
+};

@@ -248,6 +248,10 @@ We collected hundreds of entries over the course of a week or so. We had given o
   <img src="https://user-images.githubusercontent.com/40678238/202980449-2a333b06-23cb-4bc5-8ea3-edaeced247ef.png" height=300 />
 </div>
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/40678238/203176670-043d5f6e-28c6-45b0-a089-ed133ab4091a.png" height=400 />
+</div>
+
 ### Penguins at Work
 Those two days were intense. We knew we had to do matrix multiplication in-order to calculate the individual scores of each user relative to each and every other student. We knew it was an O(n<sup>2</sup>) problem. We didn't realize how much computation it would take.
 
@@ -256,6 +260,14 @@ Thankfully, the night before release, we managed to get our program to be multi-
 It took about an hour until we had our CSVs ready to be imported into PostgreSQL. We met up on the "loud floor" of our student centre and ran some data analysis on the scores, just for fun. We found the data so interesting that we released graphs of our findings alongside their top 5 matches.
 
 I spent that entire night, long into the morning, building an HTML/CSS/JS/PHP page to host our results. We launched at around 10 in the morning to much student acclaim.
+
+<p float="left" align="center">
+  <img src="https://user-images.githubusercontent.com/40678238/203176774-7a8bd495-9b21-4d05-8bc4-51d868acb87f.png" height=300/>
+  <img src="https://user-images.githubusercontent.com/40678238/203176790-244e6107-a3bb-4791-83ef-0742bb02e1ba.png" height=300/>
+  <img src="https://user-images.githubusercontent.com/40678238/203176809-0edb29fd-c9a3-419c-aec3-8672372671b2.png" height=300/>
+  <img src="https://user-images.githubusercontent.com/40678238/203177021-f93912ef-6fd0-4de7-acb4-80bb748c4234.png" height=300/>
+</p>
+<br/><br/>
 
 ### Meetups and Partnerships
 

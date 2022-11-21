@@ -74,22 +74,49 @@ Technologies: React, React-Native, JS, PHP, SQL.
 The following are repos containing code associated with RU Social that was not included in this monorepo. Technologies used are included below.
 
 ### rumine-cupids-arrow-matcher-2020
+This was a series of Python scripts used to execute matrix multiplication across our weighting matrices and student responses. The output of these scripts was used as the matches for Cupid's Arrow.
+
+Technologies: Python, NumPy, PostgreSQL, SQL.
 
 ### rumine-test-profile-generator
+This was a PHP script used to create test profiles for Cupid's Arrow and later modified to generate test profiles for the initial version of the app.
+
+Technologies: PHP, SQL.
 
 ### findmygroupchats
+This was a website created in the height of the COVID-19 pandemic to help students find peers in their classes. It had a search bar and let you quickly find the group chats in RU Friends associated with your course.
+
+Technologies: PHP, HTML, CSS, JS, SQL.
 
 ### rumine-shop
+This was our merchandise shop that sold baseball caps, toques (beanies for my American friends), "autographs" from our mascot Pippy, condoms, and "shares' in our company.
+
+Technologies: PHP, HTML, CSS, JS, SQL, Shopify.
 
 ### rumine-admin-panel
+This was a simple HTML webpage that called upon private endpoints to fetch reports, blocks, and other metrics.
+
+Technologies: HTML, CSS, JS.
 
 ### rumine-django-backend
+This was the original backend developed in Python using Django. It was scrapped after a few days for it's poor support for PostgreSQL. It was swapped out for the Spring-Boot backend.
+
+Technologies: Django, Python, PostgreSQL, SQL.
 
 ### rumine-bash-scripts
+These are various BASH scripts used to handle infrastructure like load balancing and starting/stopping JVM processes.
+
+Technologies: BASH.
 
 ### rumine-apache-http-webserver-configurations
+These are the Apache HTTP Webserver configuration files for RU Mine.
+
+Technologies: Apache HTTP Webserver.
 
 ### social-scoop
+This was a publication that was spun up as a derivative project of RU Mine. It featured articles weekly and a podcast bi-weekly.
+
+Technologies: HTML, CSS, JS, RSS.
 
 ## 3. Understanding the code
 

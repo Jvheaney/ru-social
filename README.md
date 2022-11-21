@@ -1,6 +1,6 @@
 # RU Social
 
-The date is January 14, 2020. You've come up with a funny idea to make a dating app for your university (at the time named, Ryerson University) while working out. It will be called RU Mine. You message your friends, tell them your idea, and a close friend of yours agrees to make it with you. You tell him, "If the domain is available, I will build it".
+The date is January 14, 2020. You've come up with a funny idea to make a dating app for your university (at the time, Ryerson University) while working out. It will be called RU Mine. You message your friends, tell them your idea, and a close friend of yours agrees to make it with you. You tell him, "If the domain is available, I will build it".
 
 
 It was available.

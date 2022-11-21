@@ -7,3 +7,23 @@ It was available.
 
 
 Thus started the journey to make Ryerson's dating app, which permanently shifted the culture of the school and lead to the development of a social network that impacted thousands of Ryerson students. A story that involves fierce competition, crashing servers, DDoS attacks, sleepless nights, hundreds of thousands of lines of code, and countless stories of love and cheating. This is the story of RU Mine, Ryerson University's dating app turned social media icon.
+
+## Table of Contents
+1. Summary of the monorepo
+2. Missing code from the monorepo
+3. Understanding the code
+4. Infrastructure
+5. Takeaways
+6. The Story of RU Mine
+
+## Summary of the monorepo
+
+## Missing code from the monorepo
+
+## Understanding the code
+
+## Infrastructure
+
+## Takeaways
+
+## The Story of RU Mine

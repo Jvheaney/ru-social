@@ -1,4 +1,4 @@
-# RU Social
+# RU Social: RU Mine and RU Friends
 ![logo_3](https://user-images.githubusercontent.com/40678238/202979724-11f499b1-873f-4285-a257-7a82e8ac7324.png)
 
 The date is January 14, 2020. You've come up with a funny idea to make a dating app for your university (at the time, Ryerson University) while working out. It will be called RU Mine. You message your friends, tell them your idea, and a close friend of yours agrees to make it with you. You tell him, "If the domain is available, I will build it".

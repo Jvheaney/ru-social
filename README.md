@@ -10,12 +10,12 @@ Thus started the journey to make Ryerson's dating app, which permanently shifted
 <br/>
 <br/>
 ## Table of Contents
-1. Summary of the monorepo
-2. Missing code from the monorepo
-3. Understanding the code
-4. Infrastructure
-5. Takeaways
-6. The Story of RU Mine
+1. <a href="https://github.com/Jvheaney/ru-social#1-summary-of-the-monorepo">Summary of the monorepo</a>
+2. <a href="https://github.com/Jvheaney/ru-social#2-missing-code-from-the-monorepo">Missing code from the monorepo</a>
+3. <a href="https://github.com/Jvheaney/ru-social#3-understanding-the-code">Understanding the code</a>
+4. <a href="https://github.com/Jvheaney/ru-social#4-infrastructure">Infrastructure</a>
+5. <a href="https://github.com/Jvheaney/ru-social#5-takeaways">Takeaways</a>
+6. <a href="https://github.com/Jvheaney/ru-social#6-the-story-of-ru-mine">The Story of RU Mine</a>
 <br/>
 
 ## 1. Summary of the monorepo

@@ -119,6 +119,11 @@ This was a publication that was spun up as a derivative project of RU Mine. It f
 Technologies: HTML, CSS, JS, RSS.
 
 ## 3. Understanding the code
+It is important to understand that this code was written over the course of 2 years in speed bursts to add new features, fix performance bugs, and hit deadlines our community expected. There are aspects of the code that is hastily written, and if you look close enough you can see a pattern emerge of slowly improving code as time went on.
+
+Initial files involved with RU Mine are written far worse than files involved with RU Friends. There are lots of commented out code in RU Friends where performance improvements were made (most notably is making notifications asynchronous from the REST API call causing it).
+
+Please read my takeaways to see how I think this code holds up today (Spoiler: there's a lot of things I would improve).
 
 ## 4. Infrastructure
 

@@ -420,15 +420,25 @@ Oh, lovely. The drives are on the brink of failure. But why? I had just gotten t
 
 No time to ask now, we post a quick outage notice and I run over to the datacentre to grab the machine myself to take a look. I copied all the data to backup drives and got to work.
 
-This began a three month dark time for RU Mine, where the backend was totally offline and the server was unusable. I spent those three months figuring out what in the world could be the matter, and after weeks of searching and talking with sysadmins on Fiverr, I have my plausible answer.
+This began a three month dark time for RU Mine, where the backend was totally offline and the service was unusable. I spent those three months figuring out what in the world could be the matter, and after weeks of searching and talking with sysadmins on Fiverr, I have my plausible answer.
 
 The drives are Shingled Magnetic Recording, or SMR, drives. Basically, the data is written on to the drives like how shingles are placed onto a roof; small overlap ontop of each piece. Drive manufacturers started doing this to increase the density and lower the cost of consumer drives. They're okay for your average desktop, but when it comes to servers they are like mainlining poison. Especially servers equipped with ZFS, which mine was.
 
-We've narrowed down the issue, now what is the cause? It's really hard to say for sure, but I have a theory given how SMR drives work. The way you write data to an SMR drive involves "lifting" the data sitting ontop of the data you need to modify/access and placing that into cache. SMR drives tend to have decently large caches for this reason; however, when data is consistently being modified, accessed, and written, much like how logs would be spitting data into files all across an operating system under a DDoS attack, that available cache begins to run dry. When you run out of cache on the drive, you start getting really funky data. Now add ZFS running Raidz2 on top of all that, and you have a real messy situation. I think the DDoS put the final nail into the coffin for my SMR drives.
+We've narrowed down the issue, now what is the cause? It's really hard to say for sure, but I have a theory given how SMR drives work. The way you write data to an SMR drive involves "lifting" the data sitting ontop of the data you need to modify/access, placing that into cache, modifying the data, then placing the cached data back onto the platter. SMR drives tend to have decently large caches for this reason; however, when data is consistently being modified, accessed, and written, much like how logs would be spitting data into files all across a file system under a DDoS attack, that available cache begins to run dry. When you run out of cache on the drive, you start getting really funky data. Now add ZFS running Raidz2 on top of all that, and you have a real messy situation. I think the DDoS put the final nail into the coffin for my SMR drives.
 
 So what is the solution? I needed to purchase perpendicular magnetic recording, or PMR, drives. These drives record the data more similar to brick walls, with each brick being placed in it's own space, not overlapping any other brick. They are accessed individually, and written one by one. You get less density for the disk, you pay more for the datacentre approval, but they _just work_. Do not make the same mistake as me, get PMR drives.
 
 ### Version 2
+Well, we've been gone for 3 months with basically no excuse. We can't just come back exactly the same as we left, we need to give people a reason to give us another chance.
+
+We revamped the UI in what we called V2, which added new features like badges, interests, Spotify artists, and had many backend improvements, namely to how photos were being compressed. Our old method of a shell script was hacky at best, and produced even worse results for any image that wasn't the utmost best. My new system took advantage of ImageMagick, and was a chunk of code I took from another social network I was building and experimenting with at the time.
+
+We launched version 2 and it was a big hit. The server worked, the app was quick, and everyone was happy.
+
+We fixed a few bugs with a "shimmer" library causing crashing on select iOS devices, but nothing a few hot fixes couldn't repair.
+
+RU Mine was back.
+
 <p float="left" align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202982414-f4671991-237e-4e22-a12e-be05dfe85da6.jpg" height=300 />
   <img src="https://user-images.githubusercontent.com/40678238/202982427-6ebde867-1035-4e2f-8b2f-054cbcba2fd6.jpg" height=300 />
@@ -439,11 +449,27 @@ So what is the solution? I needed to purchase perpendicular magnetic recording, 
 </p>
 
 ### Merchandise
+With our V2 launch, we wanted to pair it up with a line of baseball caps and touques (or beanies, for my American friends). We went through the process of finding a manufacturer, deciding on the design we wanted created, and fired them off to be produced in 2 large orders.
+
+We got them delivered shortly after, and worked with a very talented Ryerson student, that doubled as a graphic designer and photographer, to do a photoshoot with some friends of mine. The pictures came out amazing, and we launched the store in October to much success.
+
+We had a lot of orders in the first few days, and received some awesome emails from students that told us they had actually met their significant other on RU Mine and wanted to purchase the hats as a thank you.
+
+We donated a portion of all the hat sales to the WWF to protect penguins. Pippy, our mascot, was very pleased with this news.
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202982647-a8520ed1-6218-4d76-ad22-360d22f1deb3.jpg" height=300 />
 </div>
 
 ### RU Friends
+As soon as we had launched V2, we had already started work on what we were calling "RU Friends", a friend finder that was deisgned to help people make meaningful connections to peers at Ryerson. The long term vision was to turn this into a social network, but we started with a soft launch of just a general friend connector.
+
+RU Friends took a few nights to develop and largely changed how the UI worked on the frontend. My partner debated a lot back and forth, and we ultimately decided on what you see in the images below.
+
+RU Friends brought in a new technology, Neo4J, which I had been playing with a lot on my other social network at the time. We were using the graph to suggest friends based on mutuals, shared interests, classes, and hobbies. It worked great and it was a fantastic experience bringing a new technology to production in less than a month. Something I was not used to at work.
+
+RU Friends launched on December 6th and was a big hit, with thousands of users migrating their dating profiles to friends, and hundreds more joining the service thereafter. We still offered the same great encrypted chatting that people loved, and a new opportunity to meet people.
+
 <p float="left" align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202982738-beab2be8-6577-4535-a211-4a0d3dad2a17.jpg" height=300 />
   <img src="https://user-images.githubusercontent.com/40678238/202982824-66687554-a6d4-47af-aec5-bdbdc89711d4.jpg" height=300 />
@@ -451,18 +477,49 @@ So what is the solution? I needed to purchase perpendicular magnetic recording, 
 
 
 ### Groups and Group Chats
+Now it was time to leverage our audience and make a quick pivot into trying to become a social network. My idea was to introduce groups and group chats for courses, tutorials, labs, clubs, and councils, to help people find their community even though everyone was so disconnected with online school.
+
+We built a really great service, still largely leaning on the graph database to track likes, comments, posts, groups and search. We tied it all up with what I would consider a very beautiful and intuitive UI. It worked really well, and for those that actually did use it, I think it was a big helping hand for them during online school. I won't mention exactly why, but let's just say professors emails were tracked and banned from using our app, and I wasn't planning to tell the school who may or may not have been using our app during exam hours.
+
+_None of my business, quite frankly!_
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202983029-54feed40-9f10-4fe2-8960-ba45dbaac2d7.jpg" height=300 />
 </div>
 
 ### Social Scoop
+Around this same time, I called up one of my close friends and asked if he wanted to try to create a student-run media publication along with me. We were going to call it _Social Scoop_. He agreed, and we began coming up with programming for the platform.
+
+We were able to get permission from our school to give out "creative practice hours" to students in programs requiring them, which was a win-win for us and the students working for us. They didn't have to work as free labour on some film set, and we didn't have to pay our content creators.
+
+We had a couple of writers helping us out, including myself, and we had a podcast that ran biweekly. My friend largely managed the podcast, doing all the editing himself, while I focused more on the writing content. We worked with an absolutely fantastic podcast host that worked very hard to produce a show every two weeks for us. She made our lives significantly easier.
+
+Unfortunately, Social Scoop didn't end up getting the traction we had hoped and we shut it down at the end of the semester.
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202983504-be659b04-86fc-49fb-95fb-a49884fed3b0.jpg" height=300 />
 </div>
 
 ### Press (Again)
+Around the time of our groups and group chat launch, we had been approached four times by student journalists; two from the largest student-run news outlet on campus, one from the outlet that ran our initial piece now a year prior, and the last one from the school's radio station.
+
+The articles were all incredibly nice to us, and certainly helped us market groups group chats as best as we could. They spoke very highly of our services, which reassured us despite our now slowing metrics.
 
 ### RU Bot or Not, Valentine's Day 2021 Special
+For our Valentine's Day event, we challenged the student body to answer a handful of questions leading up to Valentine's Day in an event we called RU Bot or Not. The premise was simple; we would collect answers from the student body for 10 or so days, then we would release a Turing-test like game on Valentine's Day where the student had to guess who was the human out of 3 chatters. If they guessed correctly, they got the human's Instagram handle.
+
+This was a lot of fun to create. The questionnaire portion leading up to Valentine's Day was a few textareas stacked on top of eachother with some fancy web-UI to make it pop. The game itself has a fun story attached to it.
+
+It's February 13th at around 5pm, and I have not even started developing the game. We are launching both Social Scoop and RU Bot or Not on the same day, and I have been focusing entirely on Social Scoop. Your friend asks you if you want to go out to hang out with him and few girls; what do you say? Sure, give me 5 minutes.
+
+I get back home at 11pm, still without a single line of code written. I make myself a cup of coffee, something that had become a bit of ritual at 11pm while staring at RU Mine code, and get to work.
+
+I worked throughout the entire night to get RU Bot or Not fully completed and tested by 8am. I scheduled it all on the server to enable access to the React app at noon, sent a message to my partner that it's done and I was headed to bed, and that was that.
+
+I woke up at around 12:30pm, just after the game had launched, to hear it was a huge success. No errors, no bugs, everyone was just having fun.
+
+Looking back, this night in particular may have been one of my fondest moments looking back on the chaos that was RU Mine.
+
 <p float="left" align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202983106-40f8901a-13ae-40ea-bfb5-e7120cf19434.jpg" height=300 />
   <img src="https://user-images.githubusercontent.com/40678238/202983336-4dc6c3cf-84e9-4992-9094-82cbf838f239.jpg" height=300 />
@@ -470,6 +527,29 @@ So what is the solution? I needed to purchase perpendicular magnetic recording, 
 </p>
 
 ### The Final Line
+My focus shifted away from active development of RU Mine and towards other projects, including one of the hardest semesters of mechanical engineering at school, with my last real code related to the platform being RU Mine Analytics (or as I named it in a beyond tired state, RU Mine Analythics). It was a process that ran nightly to gather all of that days metrics, including everything from the number of messages sent across dating, friends, and group chats, how many new profiles for friends and dating were created, how many new posts, comments, likes, and groups, you name it. I had it all.
+
+I began to help out some friends with charities they were passionate about and used our mailing list to raise awareness on their behalf.
+
+At this point, the metrics weren't lying, RU Mine, RU Friends, Groups, and Group Chats were coming to a close. By the end of the semester, we had dropped from monumental heights we had prior, and it was at that point we decided to hang it up. We left the service running, and it has been running for nearly 2 years now without a hitch. The service was as stable as stable could be, but nobody was using it anymore.
+
+To quote Robert Frost,
+
+_Nature’s first green is gold,
+Her hardest hue to hold.
+Her early leaf’s a flower;
+But only so an hour.
+Then leaf subsides to leaf.
+So Eden sank to grief,
+So dawn goes down to day.
+Nothing gold can stay._
+
+Ryerson University, for which the "RU" in RU Mine and RU Friends has it's namesake, was renamed to _Toronto Metropolitan University_. Kinda sounds like a train station, but who am I to judge.
+
+I graduated from Ryerson University just before _TMU_ officially changed it's name, and with those two factors, RU Mine went from dawn down to day.
+
+Nothing gold can stay.
+
 <div align="center">
 <img src="https://user-images.githubusercontent.com/40678238/202983636-d6b62c3b-4a3e-453f-8b56-3323841eb2e0.jpg" height=300 />
 </div>

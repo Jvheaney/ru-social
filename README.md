@@ -380,6 +380,12 @@ I started with two JVMs each with 4GB of RAM, and I pushed that update around 5a
 
 
 ### Smooth Sailing and Milestones
+A few weeks has gone by since our launch and the days of putting out fires. The Apache HTTP Webserver loadbalancer was a fantastic idea and has let me make incremental updates to the code running on the server ever since.
+
+Updates were made to the app, fixing UI bugs, disabling buttons after they were clicked, and other small UI bugs. It's now June, and we are nearing 1 million swipes on the platform. My partner and I joke we are going to celebrate popping a bottle of champagne over Zoom when it finally crosses the big number.
+
+On June 3, we finally hit 1 million swipes. Things were looking good for RU Mine.
+
 <div align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202981851-773d3dfb-251e-4c11-a5a5-4f53fe0600a7.png" height=300 />
 </div>

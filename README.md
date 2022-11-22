@@ -164,7 +164,6 @@ The infrastructure I designed for RU Mine progressively grew more complex, but i
 
 ![rumine_final_arch](https://user-images.githubusercontent.com/40678238/203208479-5d07632b-2637-424f-bc42-28c11033d1b3.jpg)
 
-<br/><br/>
 
 ## 5. Takeaways
 There are a few key takeaways from this code. First off, this is a very crude and old representation of how I code. This started off as a 10-day sprint to get a working application, frontend and backend, to production. There is a lot a very messy code, especially near the beginning of the backend's journey (RU Mine v1). It's terribly disorganized, and for some reason I was manually creating the JSON for responses. Ridiculous. That's what a mad dash to get something done in a framework you have no experience in will do to you.

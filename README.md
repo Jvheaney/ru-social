@@ -518,7 +518,7 @@ I worked throughout the entire night to get RU Bot or Not fully completed and te
 
 I woke up at around 12:30pm, just after the game had launched, to hear it was a huge success. No errors, no bugs, everyone was just having fun.
 
-Looking back, this night in particular may have been one of my fondest moments on the chaos that was RU Mine.
+Looking back, this night in particular may have been one of my fondest moments of the chaos that was RU Mine.
 
 <p float="left" align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202983106-40f8901a-13ae-40ea-bfb5-e7120cf19434.jpg" height=300 />

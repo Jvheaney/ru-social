@@ -282,17 +282,40 @@ I spent that entire night, long into the morning, building an HTML/CSS/JS/PHP pa
   <img src="https://user-images.githubusercontent.com/40678238/203176809-0edb29fd-c9a3-419c-aec3-8672372671b2.png" height=300/>
   <img src="https://user-images.githubusercontent.com/40678238/203177021-f93912ef-6fd0-4de7-acb4-80bb748c4234.png" height=300/>
 </p>
-<br/><br/>
+
 
 ### Meetups and Partnerships
+Once the craziness of Valentine's Day was over, we turned our attention back to getting RU Mine's name out there into the school. We decided doing a "Tims and Chill" (For my international friends, that Tim Horton's, a coffee shop), where we purchased jugs of coffee and packs of donuts to be given out for free in one of the halls. It worked out really well, despite this looming threat of an unknown virus. We only lost a handful of hand sanitziers (get it?), and nobody got sick. Woo!
+
+We were also in discussion with a student, that wanted to open a coffee shop (and since has), to make our own brand of coffee with him, to be served during a pop up. Due to COVID-19 it fell through, but we were surprisingly close to having our own coffee floating around campus.
+
+We partnered with a handful of student groups as well, anything to get the name out there.
 
 ### COVID-19
+That mysterious virus that everyone was scared of? Surprise, it was COVID-19.
+
+The school and life is now shut down for "2 weeks" while they figure out what to do next. I was now trapped in my basement with nothing to do besides develop an app. And develop an app is exactly what I did.
 
 ### Python Development
+I began developing our original backend in Python using Django. I had used Django a handful of times before, but on nothing too serious. I had built the skeleton of much of the REST APIs I was looking for, and it was time to start filling in the application code to really make the thing tick. I was using PostgreSQL as the database, and was not wanting to switch to SQLite3. So I opted to try a handful of PostgreSQL libraries.
+
+Long story short, after a lot of testing, I just couldn't find a solid amount of documentation that made sense of what I was trying to accomplish. On top of the issues with PostgreSQL, I couldn't find a solid way of doing Javascript Web Tokens (JWTs), which would be the authentication strategy for RU Mine.
+
+I decided I needed to switch. I debated on ASP.NET since I had a lot of recent experience designing and building a JWE (Encrypted variant of JWTs) authentication platform at work, but I opted in for my first programming love, Java. All I had to do was find a framework.
 
 ### The Switch to Java
+Time was ticking. We had promised a March release and at this point it was March 17th and I was starting from zero. No mobile app, no frontend mockups, and no backend. It was time to go hard.
+
+I spent the next ~4 days coding day and night, hardly sleeping, to get a backend finished and ready to go. After a lot of work, and some hitches along the way, it was finally done. I had been testing as I went along, but I didn't have time to write unit tests; I figured I would just test it as I was developing the mobile app.
 
 ### Mobile App Development
+The speed coding shifted from Java over to React-Native, with really no end in sight. I had both iOS and Android simulators and my spring-boot backend running all at the same time. My poor laptop was chugging, but it got through it.
+
+We had some rough ideas of what we wanted our UI to look like, but nothing concrete. I picture my time building the original RU Mine UI was like how a musician may tell a luthier they want more "power" and "tone" in their violin; abstract feelings and thoughts that somehow have to be translated to something physical (in my case, sorta physical). Nonetheless, as do the luthiers, I managed to make something of these abstract thoughts.
+
+After ~6 days of finger numbing prograaming, we had the very first RU Mine UI. She was ugly as all hell, but damn it, she worked (Okay, it wasn't that bad, but it wasn't as "modern" as we had wanted). I sped off to hook it all up to the backend functions, testing everything as intensely as I possibly could.
+
+Finally, it was time to submit it to Google and Apple.
 
 ### App Store Approvals
 

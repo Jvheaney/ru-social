@@ -318,8 +318,30 @@ After ~6 days of finger numbing prograaming, we had the very first RU Mine UI. S
 Finally, it was time to submit it to Google and Apple.
 
 ### App Store Approvals
+If you ever released an app, you know this step all to well; there is always something wrong with something you did and it must be fixed before they can even bare to test it. Or, maybe, they typed the password in the email field and email in the password field (honestly happened to me). There's always something that goes wrong at this point, and given that it was now March 27, we really didn't have time for much to go wrong.
+
+After a few back and forth submissions to both Apple and Google for various stupid reasons, Apple finally gave us the greenlight.
+
+It was now just Google. Google, the app store that had software verify the binary was now holding us up. Great.
+
+We waited, and waited, and seriously considered releasing the app without Android.
+
+But finally, Google pulled through. At what felt like the eleventh hour, they approved our app. It was now around 7pm on March 29th; the day that is now known as the day RU Mine launched.
+
 
 ### Night of the Release
+I was in my bedroom when I got the notification that the Play Store accepted our binary. I quickly passed on the news to my partner and asked if he thought we were ready.
+
+We gave it one more walkthru, and the we released it to the world.
+
+Within the first hour we had 700 users on the app, and it was climbing fast. Critical mass was a success.
+
+I had my screen open with my server metrics and the logs for the application server. It was absolutely flying by, you couldn't make anything out even if you tried.
+
+We had a small issue: things felt slow and sluggish. So slow and sluggish that some people were clicking buttons multiple times which sent bad data to the application server, just to be rejected and asked to complete this same call again. Server loads were fine, what was going on?
+
+I cleared off other applications running on the server as best as I could, but RU Mine was going through it's first performance bottleneck squeeze.
+
 
 <p align="center" float="left">
   <img src="https://user-images.githubusercontent.com/40678238/202981354-6c18b045-09b4-47db-94f5-e58657e06174.png" height=300 />
@@ -327,8 +349,35 @@ Finally, it was time to submit it to Google and Apple.
 </p>
 
 ### Putting Out Fires
+The server is slowly seizing to run, and the app is getting sluggish as a result.
+
+What do you do?
+
+Think about this seriously now. Put yourself in my shoes. All this code I just wrote is now slowing down to a halt, and you see the writing on the wall. The application server is going to crash.
+
+_What do you do?_
+
+You crash it first. Naturally.
+
+Blame it on too many users joining at once; turn it into marketable material.
+
+We did exactly that.
+
+Obviously we didn't just crash it to crash it. We crashed it so that we could increase the memory for the JVM, which was currently set at 2GB. Clearly not enough. We increased that number to 4GB and restarted the application server. The app was back up and running in just a few minutes.
 
 ### JVM Overload
+Okay, take a deep breath. We're good, right? We're good, we must be.
+
+We were not.
+
+The next fire approaches: the JVM is dropping requests because they are taking too long to process. Crap.
+
+I know I need to rewrite some of the code that is most obviously causing the issues, but I can't keep killing the server myself and blaming it on overloading. _One overload crash looks great, two looks ridiculous_.
+
+We had to wait until people went to bed to do any major work, but I had a plan. I was going to throw the application server behind an Apache HTTP Webserver load balancer. This would spread the dropped requests across multiple JVMs, hopefully increase the concurrency, and, most importantly, it would help me restart the JVM processes without our users knowing I was pushing updates. As one JVM turned off, those requests would just move to the others in the load balancer.
+
+I started with two JVMs each with 4GB of RAM, and I pushed that update around 5am that night.
+
 
 ### Smooth Sailing and Milestones
 <div align="center">

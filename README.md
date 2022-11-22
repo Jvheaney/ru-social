@@ -384,15 +384,49 @@ A few weeks has gone by since our launch and the days of putting out fires. The 
 
 Updates were made to the app, fixing UI bugs, disabling buttons after they were clicked, and other small UI bugs. It's now June, and we are nearing 1 million swipes on the platform. My partner and I joke we are going to celebrate popping a bottle of champagne over Zoom when it finally crosses the big number.
 
-On June 3, we finally hit 1 million swipes. Things were looking good for RU Mine.
+On June 2nd, we finally hit 1 million swipes. Things were looking good for RU Mine.
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202981851-773d3dfb-251e-4c11-a5a5-4f53fe0600a7.png" height=300 />
 </div>
 
 ### DDoS Attack
+And it's slow again. What in the world is happening.
+
+This is different this time. Definitely different.
+
+Last time, the app was slow and sluggish, but the SSH terminal was fine, normal speed. That's not the case this time. Typing anything out is taking _forever_ and the SSH pipe is routinely closing.
+
+What in the world is going on?
+
+I sign on to my datacentre's admin panel and <b>WOW, THAT'S A LOT OF TRAFFIC</b>. All in bound. <sub>Not calling anything in particular.</sub>
+
+Oh crap, this is a DDoS attack.
+
+What do you do in a DDoS attack? Get behind CloudFlare? Probably, but no time for that, you have a service to save!
+
+I signed in on my iDrac port, which is on a different network from the main connection to the server, and started tweaking the firewall settings on the server to block the IPs.
+
+In some combination of the firewall, probably our DNS provider, and the attackers losing interest, RU Mine was stable(-ish, _we'll get to that_) once again.
 
 ### Crashing Servers
+Wow, okay, so it's a little faster, but it's still not where it used to be. What's going on? Is it my imagination?
+
+Nope, it's slower than it used to be.
+
+Let's run some diagnostics on the server to see what's up.
+
+Oh, lovely. The drives are on the brink of failure. But why? I had just gotten them.
+
+No time to ask now, we post a quick outage notice and I run over to the datacentre to grab the machine myself to take a look. I copied all the data to backup drives and got to work.
+
+This began a three month dark time for RU Mine, where the backend was totally offline and the server was unusable. I spent those three months figuring out what in the world could be the matter, and after weeks of searching and talking with sysadmins on Fiverr, I have my plausible answer.
+
+The drives are Shingled Magnetic Recording, or SMR, drives. Basically, the data is written on to the drives like how shingles are placed onto a roof; small overlap ontop of each piece. Drive manufacturers started doing this to increase the density and lower the cost of consumer drives. They're okay for your average desktop, but when it comes to servers they are like mainlining poison. Especially servers equipped with ZFS, which mine was.
+
+We've narrowed down the issue, now what is the cause? It's really hard to say for sure, but I have a theory given how SMR drives work. The way you write data to an SMR drive involves "lifting" the data sitting ontop of the data you need to modify/access and placing that into cache. SMR drives tend to have decently large caches for this reason; however, when data is consistently being modified, accessed, and written, much like how logs would be spitting data into files all across an operating system under a DDoS attack, that available cache begins to run dry. When you run out of cache on the drive, you start getting really funky data. Now add ZFS running Raidz2 on top of all that, and you have a real messy situation. I think the DDoS put the final nail into the coffin for my SMR drives.
+
+So what is the solution? I needed to purchase perpendicular magnetic recording, or PMR, drives. These drives record the data more similar to brick walls, with each brick being placed in it's own space, not overlapping any other brick. They are accessed individually, and written one by one. You get less density for the disk, you pay more for the datacentre approval, but they _just work_. Do not make the same mistake as me, get PMR drives.
 
 ### Version 2
 <p float="left" align="center">

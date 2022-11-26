@@ -184,7 +184,7 @@ Oh, and, never ever use shingled magnetic recording drives in a server and expec
 ## 6. The Story of RU Mine
 
 ### The Idea
-It's true; I really came up with the idea for RU Mine while working out. I _really did_ tell my friends and agreed to build it, alongside one of my close friends, on the condition that the domain was available. We decided that it would be a dating app made specifically for Ryerson Students, and we would verify their school in the age-old way, using their student email address.
+It's true; I really came up with the idea for RU Mine while working out. I _really did_ tell my friends and agreed to build it on the condition that the domain was available. My close friend and I decided that it would be a dating app made specifically for Ryerson Students, and we would verify their school in the age-old way, using their student email address.
 
 We quickly mapped out some features we wanted this app to have; all-inclusivity, missed connections, mutual courses, private and encrypted private messages. We threw all of these features onto an HTML template and put it up on the internet. Now it was time to see what Ryerson felt about it.
 <br/><br/>
@@ -219,7 +219,7 @@ _Success._
 ### Press
 Around this time, we were contacted by a few student newspapers that wanted to know who we were and what in the world RU Mine was. We accepted and did our first interview the day after our sticker extravaganza. It went to print and was posted online on January 22nd. We discussed our progress, our plans, explained who we were, and why Ryerson should be excited about it.
 
-We were also approached by a larger student news outlets, which interviewed us a few days after our initial student-news debut. That student journalist asked us some good questions about our algorithm, how we plan to diversify ourselves from the likes of Tinder and Bumble, what students can expect, and if we had ever heard of an Instagram page that was planning to do a similar match-making thing.
+We were also approached by a larger student news outlet, which interviewed us a few days after our initial student-news debut. That student journalist asked us some good questions about our algorithm, how we plan to diversify ourselves from the likes of Tinder and Bumble, what students can expect, and if we had ever heard of an Instagram page that was planning to do a similar match-making thing.
 
 We hadn't.
 <br/><br/>
@@ -229,7 +229,7 @@ We got back to our desks at the library and quickly tried to figure out what thi
 
 We did what any sane business people would do. We purchased domains that were similar to ours and fit the niche we were targeting, made it clear that we were separate, and continued on our way.
 
-The compeition was not a fan of that. They approached the reporter from the second news outlet and explained to the reporter that we had infringed on their idea, and we were stealing the audience they had grown (an audience size in which we had eclipsed a week prior). The reporter asked us for comment, to which we told the reporter that this is just business, and the other page had not started yet, so how could we possibly copy them?
+The competition was not a fan of that. They approached the reporter from the second news outlet and explained that we had infringed on their idea, and we were stealing the audience they had grown (an audience size in which we had eclipsed a week prior). The reporter asked us for comment, to which we told the reporter that this is just business, and the other page had not started yet, so how could we possibly copy them?
 
 That article never ended up being printed unfortunately. It would've helped us at the time, but we continued on.
 
@@ -243,7 +243,7 @@ We needed to get viral within our community. Our followers were growing, but slo
 
 We needed a massive amount of users right at launch.
 
-Thus started our campaign to make content that matched the language of our generation, memes. We poked fun at other local universities, made memes about the state of our own school, and always made a callback to our app. Some of the memes were dumb, some were hilarious; but they managed to work, and we watched our follower count steadily climb.
+Thus started our campaign to make content that matched the language of our generation, memes. We poked fun at other local universities, made memes about the state of our own school, and always made a callback to our app. Some of the memes were dumb, some were pretty funny; but they managed to work, and we watched our follower count steadily climb.
 
 <p float="left" align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202980670-3429c3da-95ac-47dd-8858-9179b50c8ea1.png" height=300 />
@@ -255,7 +255,7 @@ Thus started our campaign to make content that matched the language of our gener
 ### Cupid's Arrow, 2020 Valentine's Day Special
 In our short press run with the school, we had mentioned that we were planning to do a Valentine's Day special. We hadn't gone into specifics in the article, mainly because we had no specifics at the time. We just made it up while we were talking in the interview. The beauty of winging it.
 
-It was time to deliver on that promise. We set out to develop a match-making surface (eat your heart out, competition), that used an online questionnaire to match students to potential matches. We built up a frontend that included 15 quick multiple choice questions, including romantic interests, hobbies, vacation hotspots, and preferred elevators in the student centre.
+It was time to deliver on that promise. We set out to develop a match-making service (eat your heart out, competition), that used an online questionnaire to match students to other potential student matches. We built up a frontend that included 15 quick multiple choice questions, including romantic interests, hobbies, vacation hotspots, and preferred elevators in the student centre.
 
 We collected hundreds of entries over the course of a week or so. We had given ourselves 2 days to calculate the results and post them on February 12th.
 
@@ -285,9 +285,9 @@ I spent that entire night, long into the morning, building an HTML/CSS/JS/PHP pa
 
 
 ### Meetups and Partnerships
-Once the craziness of Valentine's Day was over, we turned our attention back to getting RU Mine's name out there into the school. We decided doing a "Tims and Chill" (For my international friends, that Tim Horton's, a coffee shop), where we purchased jugs of coffee and packs of donuts to be given out for free in one of the halls. It worked out really well, despite this looming threat of an unknown virus. We only lost a handful of hand sanitziers (get it?), and nobody got sick. Woo!
+Once the craziness of Valentine's Day was over, we turned our attention back to getting RU Mine's name out there into the school. We decided doing a "Tims and Chill" (For my international friends, that is Tim Horton's, a coffee shop), where we purchased jugs of coffee and packs of donuts to be given out for free in one of the halls. It worked out really well, despite this looming threat of an unknown virus. We only lost a handful of hand sanitziers (pun intended), and nobody got sick. Woo!
 
-We were also in discussion with a student, that wanted to open a coffee shop (and since has), to make our own brand of coffee with him, to be served during a pop up. Due to COVID-19 it fell through, but we were surprisingly close to having our own coffee floating around campus.
+We were also in discussion with a student that wanted to open a coffee shop (and since has) to make our own brand of coffee with him, to be served during a pop up. Due to COVID-19 it fell through, but we were surprisingly close to having our own coffee floating around campus.
 
 We partnered with a handful of student groups as well, anything to get the name out there.
 
@@ -297,11 +297,13 @@ That mysterious virus that everyone was scared of? Surprise, it was COVID-19.
 The school and life is now shut down for "2 weeks" while they figure out what to do next. I was now trapped in my basement with nothing to do besides develop an app. And develop an app is exactly what I did.
 
 ### Python Development
-I began developing our original backend in Python using Django. I had used Django a handful of times before, but on nothing too serious. I had built the skeleton of much of the REST APIs I was looking for, and it was time to start filling in the application code to really make the thing tick. I was using PostgreSQL as the database, and was not wanting to switch to SQLite3. So I opted to try a handful of PostgreSQL libraries.
+I began developing our original backend in Python using Django. I had used Django a handful of times before, but not on anything too serious. I had built the REST API skeleton I was looking for, and it was time to start filling in the application code to really make the thing tick. I was using PostgreSQL as the database, and was not wanting to switch to SQLite3. So I opted to try a handful of PostgreSQL libraries.
 
-Long story short, after a lot of testing, I just couldn't find a solid amount of documentation that made sense of what I was trying to accomplish. On top of the issues with PostgreSQL, I couldn't find a solid way of doing Javascript Web Tokens (JWTs), which would be the authentication strategy for RU Mine.
+Long story short, after a lot of testing, I just couldn't find a solid amount of documentation that made sense of what I was trying to accomplish. On top of the issues with Python and PostgreSQL, I couldn't find a solid way of doing Javascript Web Tokens (JWTs), which would be the authentication strategy for RU Mine.
 
-I decided I needed to switch. I debated on ASP.NET since I had a lot of recent experience designing and building a JWE (Encrypted variant of JWTs) authentication platform at work, but I opted in for my first programming love, Java. All I had to do was find a framework.
+I decided I needed to switch. I debated on using ASP.NET since I had a lot of recent experience designing and building a JWE (encrypted variant of JWTs) authentication platform at work, but I opted in for my first programming love, Java. All I had to do was find a framework.
+
+_Enter Spring Boot._
 
 ### The Switch to Java
 Time was ticking. We had promised a March release and at this point it was March 17th and I was starting from zero. No mobile app, no frontend mockups, and no backend. It was time to go hard.
@@ -309,20 +311,20 @@ Time was ticking. We had promised a March release and at this point it was March
 I spent the next ~4 days coding day and night, hardly sleeping, to get a backend finished and ready to go. After a lot of work, and some hitches along the way, it was finally done. I had been testing as I went along, but I didn't have time to write unit tests; I figured I would just test it as I was developing the mobile app.
 
 ### Mobile App Development
-The speed coding shifted from Java over to React-Native, with really no end in sight. I had both iOS and Android simulators and my spring-boot backend running all at the same time. My poor laptop was chugging, but it got through it.
+The speed coding shifted from Java over to React-Native, with really no end in sight. I had both iOS and Android simulators and my Spring-Boot backend running all at the same time. My poor laptop was chugging, but it got through it.
 
-We had some rough ideas of what we wanted our UI to look like, but nothing concrete. I picture my time building the original RU Mine UI was like how a musician may tell a luthier they want more "power" and "tone" in their violin; abstract feelings and thoughts that somehow have to be translated to something physical (in my case, sorta physical). Nonetheless, as do the luthiers, I managed to make something of these abstract thoughts.
+We had some rough ideas of what we wanted our UI to look like, but nothing concrete. I picture my time building the original RU Mine UI like how a musician may tell a luthier they want more "power" and "tone" in their violin; abstract feelings and thoughts that somehow have to be translated to something physical (in my case, sorta physical). Nonetheless, as do the luthiers, I managed to make something of these abstract thoughts.
 
-After ~6 days of finger numbing prograaming, we had the very first RU Mine UI. She was ugly as all hell, but damn it, she worked (Okay, it wasn't that bad, but it wasn't as "modern" as we had wanted). I sped off to hook it all up to the backend functions, testing everything as intensely as I possibly could.
+After ~6 days of finger numbing programming, we had the very first RU Mine UI. She was ugly as all hell, but damn it, she worked (Okay, it wasn't that bad, but it wasn't as "modern" as we had wanted). I sped off to hook it all up to the backend functions, testing everything as intensely as I possibly could.
 
 Finally, it was time to submit it to Google and Apple.
 
 ### App Store Approvals
-If you ever released an app, you know this step all to well; there is always something wrong with something you did and it must be fixed before they can even bare to test it. Or, maybe, they typed the password in the email field and email in the password field (honestly happened to me). There's always something that goes wrong at this point, and given that it was now March 27, we really didn't have time for much to go wrong.
+If you ever released an app, you know this step all to well; there is always something wrong with something you did and it must be fixed before they can even bare to test it. Or, maybe, they typed the password in the email field and email in the password field (seriously, this happened to me). There's always something that goes wrong at this point, and given that it was now March 27, we really didn't have time for much to go wrong.
 
 After a few back and forth submissions to both Apple and Google for various stupid reasons, Apple finally gave us the greenlight.
 
-It was now just Google. Google, the app store that had software verify the binary was now holding us up. Great.
+It was now just Google. Google, the app store that had software moderators verify the binary was now holding us up. Great.
 
 We waited, and waited, and seriously considered releasing the app without Android.
 
@@ -332,11 +334,11 @@ But finally, Google pulled through. At what felt like the eleventh hour, they ap
 ### Night of the Release
 I was in my bedroom when I got the notification that the Play Store accepted our binary. I quickly passed on the news to my partner and asked if he thought we were ready.
 
-We gave it one more walkthru, and the we released it to the world.
+We gave it one more walkthru, and then we released it to the world.
 
 Within the first hour we had 700 users on the app, and it was climbing fast. Critical mass was a success.
 
-I had my screen open with my server metrics and the logs for the application server. It was absolutely flying by, you couldn't make anything out even if you tried.
+I had my screen open with my hardware metrics and the logs for the application server. It was absolutely flying by, you couldn't make anything out even if you tried.
 
 We had a small issue: things felt slow and sluggish. So slow and sluggish that some people were clicking buttons multiple times which sent bad data to the application server, just to be rejected and asked to complete this same call again. Server loads were fine, what was going on?
 
@@ -363,7 +365,7 @@ Blame it on too many users joining at once; turn it into marketable material.
 
 We did exactly that.
 
-Obviously we didn't just crash it to crash it. We crashed it so that we could increase the memory for the JVM, which was currently set at 2GB. Clearly not enough. We increased that number to 4GB and restarted the application server. The app was back up and running in just a few minutes.
+Obviously we didn't just crash it for the sake of crashing it. We crashed it so that we could increase the memory for the JVM, which was currently set at 2GB. Clearly not enough. We increased that number to 4GB and restarted the application server. The app was back up and running in just a few minutes.
 
 ### JVM Overload
 Okay, take a deep breath. We're good, right? We're good, we must be.
@@ -426,7 +428,7 @@ The drives are Shingled Magnetic Recording, or SMR, drives. Basically, the data 
 
 We've narrowed down the issue, now what is the cause? It's really hard to say for sure, but I have a theory given how SMR drives work. The way you write data to an SMR drive involves "lifting" the data sitting ontop of the data you need to modify/access, placing that into cache, modifying the data, then placing the cached data back onto the platter. SMR drives tend to have decently large caches for this reason; however, when data is consistently being modified, accessed, and written, much like how logs would be spitting data into files all across a file system under a DDoS attack, that available cache begins to run dry. When you run out of cache on the drive, you start getting really funky data. Now add ZFS running Raidz2 on top of all that, and you have a real messy situation. I think the DDoS put the final nail into the coffin for my SMR drives.
 
-So what is the solution? I needed to purchase perpendicular magnetic recording, or PMR, drives. These drives record the data more similar to brick walls, with each brick being placed in it's own space, not overlapping any other brick. They are accessed individually, and written one by one. You get less density for the disk, you pay more for the datacentre approval, but they _just work_. Do not make the same mistake as me, get PMR drives.
+So what is the solution? I needed to purchase Perpendicular Magnetic Recording, or PMR, drives. These drives record the data more similar to brick walls, with each brick being placed in it's own space, not overlapping any other brick. They are accessed individually, and written one by one. You get less density for the disk, you pay more for the datacentre stamp-of-approval, but they _just work_. Do not make the same mistake as me, get PMR drives.
 
 ### Version 2
 Well, we've been gone for 3 months with basically no excuse. We can't just come back exactly the same as we left, we need to give people a reason to give us another chance.
@@ -455,7 +457,7 @@ We got them delivered shortly after, and worked with a very talented Ryerson stu
 
 We had a lot of orders in the first few days, and received some awesome emails from students that told us they had actually met their significant other on RU Mine and wanted to purchase the hats as a thank you.
 
-We donated a portion of all the hat sales to the WWF to protect penguins. Pippy, our mascot, was very pleased with this news.
+We donated a portion of all the hat sales to the WWF to protect penguins. Pippy, our lovable penguin mascot, was very pleased with this news.
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/40678238/202982647-a8520ed1-6218-4d76-ad22-360d22f1deb3.jpg" height=300 />
@@ -503,14 +505,14 @@ Unfortunately, Social Scoop didn't end up getting the traction we had hoped and 
 ### Press (Again)
 Around the time of our groups and group chat launch, we had been approached four times by student journalists; two from the largest student-run news outlet on campus, one from the outlet that ran our initial piece now a year prior, and the last one from the school's radio station.
 
-The articles were all incredibly nice to us, and certainly helped us market groups group chats as best as we could. They spoke very highly of our services, which reassured us despite our now slowing metrics.
+The articles were all incredibly nice to us, and certainly helped us market groups and group chats as best as we could. They spoke very highly of our services, which reassured us despite our now slowing metrics.
 
 ### RU Bot or Not, Valentine's Day 2021 Special
 For our Valentine's Day event, we challenged the student body to answer a handful of questions leading up to Valentine's Day in an event we called RU Bot or Not. The premise was simple; we would collect answers from the student body for 10 or so days, then we would release a Turing-test like game on Valentine's Day where the student had to guess who was the human out of 3 chatters. If they guessed correctly, they got the human's Instagram handle.
 
 This was a lot of fun to create. The questionnaire portion leading up to Valentine's Day was a few textareas stacked on top of eachother with some fancy web-UI to make it pop. The game itself has a fun story attached to it.
 
-It's February 13th at around 5pm, and I have not even started developing the game. We are launching both Social Scoop and RU Bot or Not on the same day, and I have been focusing entirely on Social Scoop. Your friend asks you if you want to go out to hang out with him and few girls; what do you say? Sure, give me 5 minutes.
+It's February 13th at around 5pm, and I have not even started developing the game. We are launching both Social Scoop and RU Bot or Not on the same day, and I have been focusing entirely on Social Scoop. Your friend asks you if you want to go and hang out with him and a few girls; what do you say? Sure, give me 5 minutes.
 
 I get back home at 11pm, still without a single line of code written. I make myself a cup of coffee, something that had become a bit of ritual at 11pm while staring at RU Mine code, and get to work.
 
